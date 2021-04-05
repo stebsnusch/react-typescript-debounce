@@ -14,7 +14,7 @@ function App() {
 				<Paper square>
 					<Grid justify="center" container>
 						<Grid xs={12} sm={6} item>
-							<UserInput setSavedValue={setSavedValue} />
+							<UserInput setSavedValue={setSavedValue} value={savedValue} />
 						</Grid>
 						<Grid xs={12} sm={6} item>
 							<DbLike debouncedValue={savedValue} />

@@ -11,7 +11,9 @@ const DbLike = (props: { debouncedValue: string }) => {
 			height="100%"
 		>
 			<h2>DB like saved output</h2>
-			<Typography component="p">{props.debouncedValue}</Typography>
+			<Typography component="p" data-testid="db-output">
+				{props.debouncedValue}
+			</Typography>
 		</Box>
 	);
 };
